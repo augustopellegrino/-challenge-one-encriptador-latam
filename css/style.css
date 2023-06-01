@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Inter-Regular;
-    src: url("/fonts/Inter-Regular.ttf") format("truetype");
+    font-family: 'Inter-Regular';
+    src: url("../fonts/Inter-Regular.ttf") format("truetype");
     font-style: normal;
 }
 
@@ -40,7 +40,7 @@ main {
 
 .mensaje {
     background: white;
-    background-image: url("/images/muneco.svg");
+    background-image: url("../images/muneco.svg");
     background-repeat: no-repeat;
     border: none;
     border-radius: 24px;
