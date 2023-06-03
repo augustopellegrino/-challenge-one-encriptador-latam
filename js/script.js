@@ -32,6 +32,17 @@ function encriptar(stringEncriptado) {
 
     stringEncriptado = stringEncriptado.toLowerCase();
 
+    // Mapa de caracteres a reemplazar
+    const mapaAcentos = {'á':'a', 'é':'e', 'í':'i', 'ó':'o', 'ú':'u',};
+
+    // Expresion regular para buscar los caracteres a reemplzar
+    const expresion = /[áéíóúü]/ig;
+
+    // Reemplazar los caracteres acentuados por los no acentuados
+    stringEncriptado = stringEncriptado.replace(expresion, function(match) {
+        return mapaAcentos[match];
+    })
+
     for (let i = 0; i < matrizCodigo.length; i++) {
 
         //buscar coincidencias entre stringEncriptado y las letras cargadas en matrizCodigo

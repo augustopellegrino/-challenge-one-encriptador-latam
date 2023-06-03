@@ -18,15 +18,15 @@ body {
 
 header {
     width: 100%;
-    height: 44px;
+    height: 60px;
     box-sizing: border-box;
 }
 
 .logo {
     float: left;
     margin-left: 84px;
-    margin-top: 4px;
-    height: 40px;
+    margin-top: 25px;
+    height: 35px;
 }
 
 main {
@@ -37,7 +37,7 @@ main {
 .ingreso {
     float: left;
     width: 680px;
-    height: 90%;
+    height: 87%;
     margin-bottom: 72px;
     margin-left: 15%;
     position: relative;
@@ -101,7 +101,7 @@ main {
 .salida {
     float: left;
     width: 520px;
-    height: 90%;
+    height: 87%;
     margin-bottom: 72px;
     position: relative;
 }
@@ -130,7 +130,7 @@ main {
 
 .mensaje-ayuda {
     position: absolute;
-    bottom: 180px;
+    bottom: 150px;
     margin-left: 108px;
     width: 336px;
     text-align: center;
