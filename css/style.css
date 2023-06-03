@@ -68,6 +68,11 @@ main {
     font-size: 16px;
 }
 
+.botones img {
+    float: left;
+    margin-right: 8px;
+}
+
 .botones h6 {
     color: #495057;
     font-size: 12px;
