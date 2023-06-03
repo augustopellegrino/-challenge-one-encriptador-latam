@@ -1,7 +1,5 @@
 const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".mensaje");
-const copiar = document.querySelector(".copiar");
-const ayuda = document.querySelector(".mensaje-ayuda");
 
 /*
 La letra "e" es convertida para "enter"
@@ -20,8 +18,6 @@ function btnEncriptar() {
     mensaje.value = textoEncriptado;
     textArea.value = "";
     mensaje.style.backgroundImage = "none";
-    ayuda.style.display = "none";
-    copiar.style.display = "block";
 
 }
 
@@ -87,9 +83,4 @@ function desencriptar(stringDesencriptado) {
 
 }
 
-function copiarTexto() {
 
-    mensaje.select();
-    document.execCommand('copy');
-
-}
