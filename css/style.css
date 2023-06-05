@@ -183,10 +183,21 @@ main {
 
     main {
         height: auto;
+        margin-bottom: 0;
     }
     
     .ingreso {
         margin-left: 10%;
+        min-height: 85vh;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .text-area {
+        min-height: 100%;
+        margin-bottom: calc(67px + 18px + 16px + 2px);
+        resize: vertical;
+        height: fit-content;
     }
 
     .salida {
@@ -196,6 +207,11 @@ main {
 
     .mensaje {
         margin-left: 10%;
+        min-height: 85vh;
+        margin-bottom: 0px;
+        padding-bottom: 110px;
+        resize: vertical;
+        height: fit-content;
     }
 
     .mensaje-ayuda {
