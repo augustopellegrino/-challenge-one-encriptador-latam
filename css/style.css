@@ -21,6 +21,7 @@ header {
   width: 100%;
   height: 60px;
   box-sizing: border-box;
+  background-color: grey;
 }
 
 .logo {
@@ -31,23 +32,24 @@ header {
 }
 
 main {
-  height: 100%;
+  height: 90%;
   width: 100%;
+  background-color: lightblue;
 }
 
 .ingreso {
   float: left;
   width: 48%;
-  min-height: 85%;
+  min-height: 90%;
   height: auto;
   margin-bottom: 72px;
   margin-left: 15%;
   position: relative;
+  background-color: pink;
 }
 
 .text-area {
   width: 100%;
-  min-height: 60%;
   height: auto;
   resize: vertical;
   margin-bottom: 130px;
@@ -58,6 +60,7 @@ main {
   padding: 5px;
   text-transform: lowercase;
   box-sizing: border-box;
+  background-color: lightgreen;
 }
 ::placeholder {
   color: #0a3871;
@@ -72,6 +75,7 @@ main {
   width: 100%;
   margin-top: 16px;
   font-size: 16px;
+  background-color: lightsalmon;
 }
 
 .botones img {
@@ -112,14 +116,14 @@ main {
 .salida {
   float: left;
   width: 37%;
-  height: 95%;
-  margin-bottom: 72px;
+  height: 100%;
   position: relative;
+  background-color: limegreen;
 }
 
 .mensaje {
   width: 77%;
-  min-height: 93%;
+  min-height: 95%;
   height: auto;
   resize: vertical;
   background: white;
@@ -183,38 +187,33 @@ main {
 
 /* Dispositivos entre 1024px y 1200px */
 
-@media (min-width: 1024px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1200px) {
+  
   main {
-    height: auto;
+    height: 92%;
     margin-bottom: 0;
   }
 
   .ingreso {
     margin-left: 10%;
     min-height: 85vh;
-    height: auto;
     margin-bottom: 0;
   }
 
   .text-area {
     min-height: 100%;
-    margin-bottom: calc(67px + 18px + 16px + 2px);
-    resize: vertical;
+    margin-bottom: 103px;
     height: fit-content;
   }
 
   .salida {
     width: 42%;
-    height: auto;
   }
 
   .mensaje {
     margin-left: 10%;
-    min-height: 85vh;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding-bottom: 110px;
-    resize: vertical;
-    height: fit-content;
   }
 
   .mensaje-ayuda {
@@ -226,16 +225,16 @@ main {
 /* Dispositivos entre 769px y 1023px */
 
 @media (min-width: 769px) and (max-width: 1023px) {
+  
   main {
     height: auto;
-    margin-bottom: 0;
   }
 
   .ingreso {
     width: 90%;
     height: 70vh;
     margin-left: 5%;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 
   .salida {
@@ -243,18 +242,13 @@ main {
     margin-left: 5%;
     margin-bottom: 5%;
     min-height: 200px;
-    height: auto;
   }
 
   .mensaje {
     background-image: none;
     width: 100%;
-    min-height: 200px;
-    margin-bottom: 0px;
+    min-height: 220px;
     margin-left: 0;
-    padding-bottom: 110px;
-    resize: vertical;
-    height: fit-content;
   }
 
   .mensaje-ayuda {
@@ -276,19 +270,18 @@ main {
     width: 90%;
     min-height: 410px;
     height: auto;
-    margin-left: 5%;
     margin-bottom: 10px;
+    margin-left: 5%;
   }
 
   .text-area {
-    min-height: 410px;
-    margin-bottom: calc(67px + 18px + 16px + 2px);
-    resize: vertical;
-    height: fit-content;
+    min-height: 400px;
+    margin-bottom: 110px;
+    font-size: 25px;
   }
 
-  .botones {
-    bottom: 0;
+  .btn-encriptar, .btn-desencriptar {
+    font-size: 18px;
   }
 
   .salida {
@@ -311,6 +304,7 @@ main {
   }
 
   .mensaje-ayuda {
+    bottom: 0;
     width: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
