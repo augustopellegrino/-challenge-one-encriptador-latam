@@ -1,326 +1,324 @@
 @font-face {
-    font-family: 'Inter-Regular';
-    src: url("../fonts/Inter-Regular.ttf") format("truetype");
-    font-style: normal;
+  font-family: "Inter-Regular";
+  src: url("../fonts/Inter-Regular.ttf") format("truetype");
+  font-style: normal;
 }
 
 * {
-    background: #F3F5FC;
-    font-family: 'Inter-Regular';
-    font-weight: 400;
-    line-height: 150%;
-    overflow-y: hidden;
+  background: #f3f5fc;
+  font-family: "Inter-Regular";
+  font-weight: 400;
+  line-height: 150%;
+  overflow-y: hidden;
 }
 
 body {
-    height: 100vh;
-    overflow: auto;
+  height: 100vh;
+  overflow: auto;
 }
 
 header {
-    width: 100%;
-    height: 60px;
-    box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
 }
 
 .logo {
-    float: left;
-    margin-left: 6%;
-    margin-top: 25px;
-    height: 35px;
+  float: left;
+  margin-left: 6%;
+  margin-top: 25px;
+  height: 35px;
 }
 
 main {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .ingreso {
-    float: left;
-    width: 48%;
-    height: 87%;
-    margin-bottom: 72px;
-    margin-left: 15%;
-    position: relative;
+  float: left;
+  width: 48%;
+  min-height: 85%;
+  height: auto;
+  margin-bottom: 72px;
+  margin-left: 15%;
+  position: relative;
 }
 
 .text-area {
-    width: 100%;
-    min-height: 72%;
-    height: auto;
-    margin-bottom: calc(67px + 18px + 16px + 2px);
-    font-size: 32px;
-    border: none;
-    color: #0A3871;
-    margin-top: 30px;
-    padding: 5px;
-    text-transform: lowercase;
-    resize: vertical;
-    box-sizing: border-box;
+  width: 100%;
+  min-height: 60%;
+  height: auto;
+  resize: vertical;
+  margin-bottom: 130px;
+  font-size: 32px;
+  border: none;
+  color: #0a3871;
+  margin-top: 30px;
+  padding: 5px;
+  text-transform: lowercase;
+  box-sizing: border-box;
 }
-::placeholder { color: #0A3871; }
-    .text-area:focus {
-        outline: none;
-    }
+::placeholder {
+  color: #0a3871;
+}
+.text-area:focus {
+  outline: none;
+}
 
 .botones {
-    position: absolute;
-    bottom: 32px;
-    width: 100%;
-    margin-top: 16px;
-    font-size: 16px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 16px;
+  font-size: 16px;
 }
 
 .botones img {
-    float: left;
-    margin-right: 8px;
+  float: left;
+  margin-right: 8px;
 }
 
 .botones h6 {
-    color: #495057;
-    font-size: 12px;
-    margin-bottom: 16px;
+  color: #495057;
+  font-size: 12px;
+  margin-bottom: 16px;
 }
 
 .btn-desencriptar {
-    position: absolute;
-    right: 0;
-    background: #D8DFE8;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-    color: #0A3871;
-    cursor: pointer;
-    height: 67px;
-    width: 48%;
-    box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #0a3871;
+  cursor: pointer;
+  height: 67px;
+  width: 48%;
+  box-sizing: border-box;
 }
 
 .btn-encriptar {
-    background: #0A3871;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-    color: white;
-    cursor: pointer;
-    height: 67px;
-    width: 48%;
-    box-sizing: border-box;
+  background: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: white;
+  cursor: pointer;
+  height: 67px;
+  width: 48%;
+  box-sizing: border-box;
 }
 
 .salida {
-    float: left;
-    width: 37%;
-    height: 87%;
-    margin-bottom: 72px;
-    position: relative;
+  float: left;
+  width: 37%;
+  height: 95%;
+  margin-bottom: 72px;
+  position: relative;
 }
 
 .mensaje {
-    width: 77%;
-    min-height: 100%;
-    height: fit-content;
-    background: white;
-    background-image: url("../images/muneco.svg");
-    background-repeat: no-repeat;
-    background-position-y: 50px;
-    background-position-x: center;
-    background-size: 80%;
-    border: none;
-    resize: vertical;
-    border-radius: 24px;
-    color: #0A3871;
-    margin-left: 15%;
-    box-sizing: border-box;
-    padding: 6%;
-    font-size: 24px;
-    color: #495057;
+  width: 77%;
+  min-height: 93%;
+  height: auto;
+  resize: vertical;
+  background: white;
+  background-image: url("../images/muneco.svg");
+  background-repeat: no-repeat;
+  background-position-y: 50px;
+  background-position-x: center;
+  background-size: 80%;
+  border: none;
+  resize: vertical;
+  border-radius: 24px;
+  color: #0a3871;
+  margin-left: 15%;
+  box-sizing: border-box;
+  padding: 6%;
+  font-size: 24px;
+  color: #495057;
 }
 .mensaje:focus {
-    outline: none;
+  outline: none;
 }
 
 .mensaje-ayuda {
-    position: absolute;
-    left: 62.5%;
-    bottom: 70px;
-    transform: translate(-65%, -50%);
-    width: 60%;
-    text-align: center;
-    background: none;
+  position: absolute;
+  left: 62.5%;
+  bottom: 70px;
+  transform: translate(-65%, -50%);
+  width: 60%;
+  text-align: center;
+  background: none;
 }
 
 .mensaje-vacio {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28.8px;
-    color: #343440;
-    background: none;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  color: #343440;
+  background: none;
 }
 
 .mensaje-descripcion {
-    font-size: 16px;
-    line-height: 24px;
-    color: #495057;
-    background: none;
+  font-size: 16px;
+  line-height: 24px;
+  color: #495057;
+  background: none;
 }
 
 .copiar {
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-    color: #0A3871;
-    cursor: pointer;
-    height: 67px;
-    width: 62%;
-    position: absolute;
-    bottom: 0;
-    left: 62.5%;
-    transform: translate(-65%, -50%);
-    display: none;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #0a3871;
+  cursor: pointer;
+  height: 67px;
+  width: 62%;
+  position: absolute;
+  bottom: 0;
+  left: 62.5%;
+  transform: translate(-65%, -50%);
+  display: none;
 }
 
 /* Dispositivos entre 1024px y 1200px */
 
 @media (min-width: 1024px) and (max-width: 1200px) {
+  main {
+    height: auto;
+    margin-bottom: 0;
+  }
 
-    main {
-        height: auto;
-        margin-bottom: 0;
-    }
-    
-    .ingreso {
-        margin-left: 10%;
-        min-height: 85vh;
-        height: auto;
-        margin-bottom: 0;
-    }
+  .ingreso {
+    margin-left: 10%;
+    min-height: 85vh;
+    height: auto;
+    margin-bottom: 0;
+  }
 
-    .text-area {
-        min-height: 100%;
-        margin-bottom: calc(67px + 18px + 16px + 2px);
-        resize: vertical;
-        height: fit-content;
-    }
+  .text-area {
+    min-height: 100%;
+    margin-bottom: calc(67px + 18px + 16px + 2px);
+    resize: vertical;
+    height: fit-content;
+  }
 
-    .salida {
-        width: 42%;
-        height: auto;
-    }
+  .salida {
+    width: 42%;
+    height: auto;
+  }
 
-    .mensaje {
-        margin-left: 10%;
-        min-height: 85vh;
-        margin-bottom: 0px;
-        padding-bottom: 110px;
-        resize: vertical;
-        height: fit-content;
-    }
+  .mensaje {
+    margin-left: 10%;
+    min-height: 85vh;
+    margin-bottom: 0px;
+    padding-bottom: 110px;
+    resize: vertical;
+    height: fit-content;
+  }
 
-    .mensaje-ayuda {
-        left: 46.6%;
-        transform: translate(-46.6%, -50%);
-    }
-
+  .mensaje-ayuda {
+    left: 46.6%;
+    transform: translate(-46.6%, -50%);
+  }
 }
 
 /* Dispositivos entre 769px y 1023px */
 
 @media (min-width: 769px) and (max-width: 1023px) {
-    
-    main {
-        height: auto;
-        margin-bottom: 0;
-    }
-    
-    .ingreso {
-        width: 90%;
-        height: 70vh;
-        margin-left: 5%;
-        margin-bottom: 0;
-    }
+  main {
+    height: auto;
+    margin-bottom: 0;
+  }
 
-    .salida {
-        width: 90%;
-        margin-left: 5%;
-        margin-bottom: 5%;
-        min-height: 200px;
-        height: auto;
-    }
+  .ingreso {
+    width: 90%;
+    height: 70vh;
+    margin-left: 5%;
+    margin-bottom: 0;
+  }
 
-    .mensaje {
-        background-image: none;
-        width: 100%;
-        min-height: 200px;
-        margin-bottom: 0px;
-        margin-left: 0;
-        padding-bottom: 110px;
-        resize: vertical;
-        height: fit-content;
-    }
+  .salida {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    min-height: 200px;
+    height: auto;
+  }
 
-    .mensaje-ayuda {
-        left: 47.5%;
-        transform: translate(-50%, -50%);
-    }
+  .mensaje {
+    background-image: none;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 0px;
+    margin-left: 0;
+    padding-bottom: 110px;
+    resize: vertical;
+    height: fit-content;
+  }
 
+  .mensaje-ayuda {
+    left: 47.5%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 /* Dispositivos entre 376px y 768px */
 
 @media (max-width: 768px) {
+  main {
+    min-height: 90vh;
+    height: auto;
+    margin-bottom: 10px;
+  }
 
-    main {
-        min-height: 90vh;
-        height: auto;
-        margin-bottom: 10px;
-    }
-    
-    .ingreso {
-        width: 90%;
-        min-height: 410px;
-        height: auto;
-        margin-left: 5%;
-        margin-bottom: 10px;
-    }
+  .ingreso {
+    width: 90%;
+    min-height: 410px;
+    height: auto;
+    margin-left: 5%;
+    margin-bottom: 10px;
+  }
 
-    .text-area {
-        min-height: 410px;
-        margin-bottom: calc(67px + 18px + 16px + 2px);
-        resize: vertical;
-        height: fit-content;
-    }
+  .text-area {
+    min-height: 410px;
+    margin-bottom: calc(67px + 18px + 16px + 2px);
+    resize: vertical;
+    height: fit-content;
+  }
 
-    .botones {
-        bottom: 0;
-    }
+  .botones {
+    bottom: 0;
+  }
 
-    .salida {
-        min-height: 200px;
-        height: auto;
-        width: 90%;
-        margin-left: 5%;
-        margin-bottom: 0;
-    }
+  .salida {
+    min-height: 200px;
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 0;
+  }
 
-    .mensaje {
-        background-image: none;
-        width: 100%;
-        min-height: 200px;
-        margin-bottom: 0px;
-        margin-left: 0;
-        padding-bottom: 110px;
-        resize: vertical;
-        height: fit-content;
-    }
+  .mensaje {
+    background-image: none;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 0px;
+    margin-left: 0;
+    padding-bottom: 110px;
+    resize: vertical;
+    height: fit-content;
+  }
 
-    .mensaje-ayuda {
-        width: 90%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+  .mensaje-ayuda {
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-    .copiar {
-        width: 80%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
+  .copiar {
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
