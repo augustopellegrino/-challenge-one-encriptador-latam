@@ -133,6 +133,7 @@ main {
     box-sizing: border-box;
     font-size: 24px;
     color: #495057;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 }
 .mensaje:focus {
     outline: none;
