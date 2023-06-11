@@ -1,4 +1,3 @@
-
 function btnEncriptar() {
 
     //se llama a la funcion encriptar con el parametro textArea.value, que es el mensaje
@@ -10,11 +9,18 @@ function btnEncriptar() {
     mensaje.style.backgroundImage = "none";
     ayuda.style.display = "none";
     copiar.style.display = "block";
-    ajustarMensaje();
 
 }
 
 function encriptar(stringEncriptado) {
+
+    /*
+    La letra "e" es convertida para "enter"
+    La letra "i" es convertida para "imes"
+    La letra "a" es convertida para "ai"
+    La letra "o" es convertida para "ober"
+    La letra "u" es convertida para "ufat"
+    */
 
     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
     //console.table(matrizCodigo);
@@ -60,9 +66,6 @@ function btnDesencriptar() {
     const textoEncriptado = desencriptar(textArea.value);
     mensaje.value = textoEncriptado;
     textArea.value = "";
-    mensaje.style.backgroundImage = "none";
-    ayuda.style.display = "none";
-    copiar.style.display = "block";
 
 }
 
@@ -97,31 +100,7 @@ function copiarTexto() {
 
 }
 
-function ajustarTextArea() {
-
-    textArea.style.height = 'auto';
-    textArea.style.height = textArea.scrollHeight + 'px';
-
-}
-
-function ajustarMensaje() {
-
-    mensaje.style.height = 'auto';
-    mensaje.style.height = mensaje.scrollHeight + 'px';
-
-}
-
 const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".mensaje");
 const copiar = document.querySelector(".copiar");
 const ayuda = document.querySelector(".mensaje-ayuda");
-
-/*
-La letra "e" es convertida para "enter"
-La letra "i" es convertida para "imes"
-La letra "a" es convertida para "ai"
-La letra "o" es convertida para "ober"
-La letra "u" es convertida para "ufat"
-*/
-
-textArea.addEventListener('input', ajustarTextArea);
